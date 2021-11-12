@@ -1,0 +1,107 @@
+:root {
+    --input-padding: 10px;
+}
+
+.column-spacing {
+    [class*=col-]>div {
+        margin: 10px;
+    }
+}
+
+.content-spacing *+* {
+    margin-top: 2rem
+}
+
+.collapsing {
+    height: 0;
+    overflow: hidden;
+    @include transition(.2s);
+}
+
+.hb-line {
+    width: 50px;
+    height: 3px;
+    background: var(--primary-clr);
+    display: block;
+    margin-block: 9px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    min-height: 45px;
+}
+
+select {
+    cursor: pointer;
+}
+
+.select-box {
+    width: 100%;
+    @include border-radius(.25rem);
+}
+
+.form-control,
+.select-box {
+    padding: var(--input-padding);
+    background: white;
+    box-shadow: none;
+    border: 1px solid #edf0f9;
+    &:focus {
+        color: #71748d;
+        background-color: #fff;
+        border-color: var(--primary-clr);
+        outline: 0;
+        box-shadow: none;
+        &::placeholder {
+            color: var(--primary-clr);
+        }
+        i {
+            color: var(--primary-clr);
+        }
+    }
+}
+
+.disc-items {
+    li {
+        list-style: disc;
+        margin-left: 1.5rem;
+    }
+}
+
+.decimal-items {
+    li {
+        list-style: decimal;
+        margin-left: 1.5rem;
+    }
+}
+
+// owl arrrow
+.owl-arrow-top-right {
+    position: relative;
+    .owl-nav {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        button {
+            color: var(--primary-clr) !important;
+            background: white !important;
+            width: 40px;
+            height: 35px;
+            i {
+                font-size: 23px;
+            }
+            &:hover {
+                background: var(--btn-hover-clr-1) !important;
+                color: white !important;
+            }
+        }
+    }
+}
+
+// end owl arrow

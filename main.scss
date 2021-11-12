@@ -1,0 +1,80 @@
+    //####################
+    // START VARIABALES
+    // #####################
+     :root {
+        --primary-clr: #e8b;
+        --primary-rgb-clr: 255, 255, 255;
+        --secondary-clr: #ff8700;
+        --section-padding: 100px 0;
+        --black-btn-clr: #3a3a3a;
+        --black-clr-1: #3a3a3a;
+        --anker-hover-clr: #3a3a3a;
+    }
+    
+    .primary-bg {
+        background: var(--primary-clr) !important;
+    }
+    
+    .primary-text {
+        color: var(--primary-clr) !important;
+    }
+    
+    .primary-anchor {
+        color: var(--primary-clr) !important;
+        &:hover {
+            color: var(--anker-hover-clr) !important;
+        }
+    }
+    
+    .secondary-anchor {
+        color: var(--secondary-clr) !important;
+        &:hover {
+            color: var(--primary-clr) !important;
+        }
+    }
+    
+    .secodary-bg {
+        background: var(--secondary-clr) !important;
+    }
+    
+    .seconday-text {
+        color: var(--secondary-clr) !important;
+    }
+    
+    // ACTIVE BTN
+    .active-btn {
+        background: var(--primary-clr) !important;
+        color: white !important;
+    }
+    
+    .active-text {
+        color: var(--primary-clr) !important;
+    }
+    
+    // END ACTIVE BTN
+    //####################
+    // END VARIABALES
+    // #####################
+    //####################
+    // START IMPORT FILES
+    // #####################
+    @import "assets/css/_mediaquery.scss";
+    @import "assets/css/_mixin.scss";
+    @import "assets/css/_buttons.scss";
+    @import "assets/css/_typography.scss";
+    @import "assets/css/_nav.scss";
+    @import "assets/css/_footer.scss";
+    //####################
+    // END IMPORT FILES
+    // #####################
+    .ghost {
+        z-index: -1;
+    }
+    
+    .darkcircle {
+        width: 55vw;
+        height: 55vw;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+    }

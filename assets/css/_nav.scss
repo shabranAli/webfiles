@@ -1,0 +1,35 @@
+ //####################
+ // START NAV BAR 
+ // #####################
+ .preloader {
+     @include position(absolute, 0, 0, 0, 0, 100%, 100%, white);
+     z-index: 9999;
+ }
+ 
+ ul {
+     .dropdown-menu.dropdown-menus {
+         padding: 11px 20px;
+         border: 0;
+         text-align: left;
+         a {
+             margin-left: 0;
+             line-height: 24px;
+             text-transform: capitalize;
+             font-size: 16px;
+             font-weight: 500;
+             color: black !important;
+             padding: 0;
+             &:hover {
+                 background-color: transparent !important;
+                 color: red;
+             }
+         }
+     }
+ }
+ 
+ @include toggler;
+ @include sticky-top;
+ // sticky top add nav to classess fixed-top,nav-fixed
+ //####################
+ // END NAV BAR
+ //####################
